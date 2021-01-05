@@ -2,6 +2,8 @@
 using PrismSample.Views;
 using System.Threading;
 using System.Windows;
+using ModuleSample;
+using Prism.Modularity;
 
 namespace PrismSample
 {
@@ -42,6 +44,12 @@ namespace PrismSample
                 this.mutex.ReleaseMutex();
                 this.mutex.Close();
             }
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            base.ConfigureModuleCatalog(moduleCatalog);
+            moduleCatalog.AddModule<ModuleSampleModule>();
         }
     }
 }
