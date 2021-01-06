@@ -4,6 +4,9 @@ using System.Threading;
 using System.Windows;
 using ModuleSample;
 using Prism.Modularity;
+using Prism.Mvvm;
+using System.Reflection;
+using System;
 
 namespace PrismSample
 {
@@ -50,6 +53,20 @@ namespace PrismSample
         {
             base.ConfigureModuleCatalog(moduleCatalog);
             moduleCatalog.AddModule<ModuleSampleModule>();
+        }
+
+        protected override void ConfigureViewModelLocator()
+        {
+            base.ConfigureViewModelLocator();
+
+            ViewModelLocationProvider.SetDefaultViewTypeToViewModelTypeResolver(viewType =>
+            {
+                var viewName = viewType.FullName;
+                var assemblyName = viewType.GetTypeInfo().Assembly.FullName;
+                var viewModelName = $"{viewName}ViewModel,{assemblyName}";
+
+                return Type.GetType(viewModelName);
+            });
         }
     }
 }
