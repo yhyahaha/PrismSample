@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ModuleSample
+namespace PrismSample
 {
     class ViewAViewModel
     {

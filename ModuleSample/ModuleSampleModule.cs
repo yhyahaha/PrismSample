@@ -1,9 +1,8 @@
-﻿using ModuleSample;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 
-namespace ModuleSample
+namespace PrismSample
 {
     public class ModuleSampleModule : IModule
     {

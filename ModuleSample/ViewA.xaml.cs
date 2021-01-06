@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace ModuleSample
+namespace PrismSample
 {
     /// <summary>
     /// Interaction logic for ViewA

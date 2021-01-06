@@ -1,8 +1,6 @@
 ﻿using Prism.Ioc;
-using PrismSample;
 using System.Threading;
 using System.Windows;
-using ModuleSample;
 using Prism.Modularity;
 using Prism.Mvvm;
 using System.Reflection;
