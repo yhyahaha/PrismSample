@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismSample", "PrismSample\PrismSample.csproj", "{ECE0E36B-CF1D-48AA-96BB-508F199BDEC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleSample", "ModuleSample\ModuleSample.csproj", "{DD756EE5-9EDD-4330-BA45-7EAFA4D8BA94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleSample", "ModuleSample\ModuleSample.csproj", "{DD756EE5-9EDD-4330-BA45-7EAFA4D8BA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleModels", "SampleModels\SampleModels.csproj", "{D1707BE4-A532-459B-AD62-2E094BFF9782}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DD756EE5-9EDD-4330-BA45-7EAFA4D8BA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD756EE5-9EDD-4330-BA45-7EAFA4D8BA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD756EE5-9EDD-4330-BA45-7EAFA4D8BA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1707BE4-A532-459B-AD62-2E094BFF9782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1707BE4-A532-459B-AD62-2E094BFF9782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1707BE4-A532-459B-AD62-2E094BFF9782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1707BE4-A532-459B-AD62-2E094BFF9782}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
