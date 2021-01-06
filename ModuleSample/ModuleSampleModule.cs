@@ -1,4 +1,4 @@
-﻿using ModuleSample.Views;
+﻿using ModuleSample;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;

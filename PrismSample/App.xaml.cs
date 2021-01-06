@@ -1,5 +1,5 @@
 ﻿using Prism.Ioc;
-using PrismSample.Views;
+using PrismSample;
 using System.Threading;
 using System.Windows;
 using ModuleSample;

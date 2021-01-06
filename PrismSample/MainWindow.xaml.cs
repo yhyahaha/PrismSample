@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace PrismSample.Views
+namespace PrismSample
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
