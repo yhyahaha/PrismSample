@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="PrismSample.ViewA"
+﻿<UserControl x:Class="PrismSample.ViewSample"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"
@@ -8,6 +8,13 @@
              d:DesignHeight="300" d:DesignWidth="300"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,0">
+            <Button Content="実行(ServiceLocator)" Command="{Binding ExecuteAgent}"/>
+        </StackPanel>
     </Grid>
 </UserControl>

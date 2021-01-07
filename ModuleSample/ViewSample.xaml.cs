@@ -5,9 +5,9 @@ namespace PrismSample
     /// <summary>
     /// Interaction logic for ViewA
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class ViewSample : UserControl
     {
-        public ViewA()
+        public ViewSample()
         {
             InitializeComponent();
         }

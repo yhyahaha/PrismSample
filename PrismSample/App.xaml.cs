@@ -5,6 +5,7 @@ using Prism.Modularity;
 using Prism.Mvvm;
 using System.Reflection;
 using System;
+using System.Diagnostics;
 
 namespace PrismSample
 {
@@ -24,6 +25,8 @@ namespace PrismSample
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<DataAgent>();
+            containerRegistry.Register<IPersonRepository, PersonRepository>();
 
         }
 

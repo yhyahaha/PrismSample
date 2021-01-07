@@ -1,4 +1,5 @@
 ﻿using Prism.Mvvm;
+using Prism.Regions;
 
 namespace PrismSample
 {
@@ -11,9 +12,9 @@ namespace PrismSample
             set { SetProperty(ref _title, value); }
         }
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(IRegionManager regionManager)
         {
-
+            regionManager.RegisterViewWithRegion("ContentRegion", typeof(ViewSample));
         }
     }
 }

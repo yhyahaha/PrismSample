@@ -12,4 +12,7 @@
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.5" />
     <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleAppLogics\SampleAppLogics.csproj" />
+  </ItemGroup>
 </Project>

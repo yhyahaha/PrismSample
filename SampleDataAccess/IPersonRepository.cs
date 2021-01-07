@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace PrismSample
 {
-    class ViewAViewModel
+    public interface IPersonRepository
     {
+        public List<Person> GetPersons();
     }
 }
