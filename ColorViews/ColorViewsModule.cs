@@ -1,9 +1,9 @@
-﻿using ColorViews.Views;
+﻿using PrismSample.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 
-namespace ColorViews
+namespace PrismSample
 {
     public class ColorViewsModule : IModule
     {
