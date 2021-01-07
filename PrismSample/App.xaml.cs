@@ -53,7 +53,7 @@ namespace PrismSample
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             base.ConfigureModuleCatalog(moduleCatalog);
-            moduleCatalog.AddModule<ModuleSampleModule>();
+            moduleCatalog.AddModule<ColorViewsModule>();
         }
 
         protected override void ConfigureViewModelLocator()

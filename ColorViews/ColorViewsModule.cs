@@ -1,7 +1,11 @@
-﻿using PrismSample.Views;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
+using PrismSample.Red;
+using PrismSample.Blue;
+using PrismSample.Green;
+
+
 
 namespace PrismSample
 {
@@ -9,7 +13,10 @@ namespace PrismSample
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
-
+            var regionManager = containerProvider.Resolve<IRegionManager>();
+            regionManager?.RegisterViewWithRegion("RedContent", typeof(Tomato));
+            regionManager?.RegisterViewWithRegion("GreenContent", typeof(DarkTurquois));
+            regionManager?.RegisterViewWithRegion("BlueContent", typeof(MediumSeaGreen));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

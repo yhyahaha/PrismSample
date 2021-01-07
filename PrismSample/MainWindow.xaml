@@ -6,6 +6,26 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="350" Width="525" >
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <!--<ContentControl prism:RegionManager.RegionName="ContentRegion" />-->
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="0.8*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <ContentControl prism:RegionManager.RegionName="RedContent" Focusable="False"/>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+
+            <ContentControl Grid.Row="0"
+                            prism:RegionManager.RegionName="BlueContent" Focusable="False"/>
+            <ContentControl Grid.Row="1"
+                            prism:RegionManager.RegionName="GreenContent" Focusable="False"/>
+        </Grid>
     </Grid>
 </metro:MetroWindow>
