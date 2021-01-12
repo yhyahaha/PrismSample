@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.Controls;
+using System;
 
 namespace PrismSample
 {
@@ -10,6 +11,11 @@ namespace PrismSample
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MetroWindow_Closed(object sender, System.EventArgs e)
+        {
+            //(this.DataContext as IDisposable)?.Dispose();
         }
     }
 }

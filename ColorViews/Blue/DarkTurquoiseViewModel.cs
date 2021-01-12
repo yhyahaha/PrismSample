@@ -7,9 +7,9 @@ using Prism.Navigation;
 
 namespace PrismSample.Blue
 {
-    public class MediumSeaGreenViewModel : BindableBase
+    public class DarkTurquoisViewModel : BindableBase
     {
-        public MediumSeaGreenViewModel()
+        public DarkTurquoisViewModel()
         {
 
         }

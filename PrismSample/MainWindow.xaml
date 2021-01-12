@@ -1,10 +1,17 @@
 ﻿<metro:MetroWindow x:Class="PrismSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bh="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:prism="http://prismlibrary.com/"
+        xmlns:local="clr-namespace:PrismSample"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="350" Width="525" >
+        Title="{Binding Title}" Height="350" Width="525" Closed="MetroWindow_Closed" >
+    <bh:Interaction.Triggers>
+        <bh:EventTrigger EventName="Closed">
+            <local:DataContextDisposeAction/>
+        </bh:EventTrigger>
+    </bh:Interaction.Triggers>
     <Grid>
         <!--<ContentControl prism:RegionManager.RegionName="ContentRegion" />-->
         <Grid.ColumnDefinitions >
@@ -12,11 +19,9 @@
             <ColumnDefinition Width="0.8*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid>
-            <ContentControl prism:RegionManager.RegionName="RedContent" Focusable="False"/>
-        </Grid>
+        <ContentControl prism:RegionManager.RegionName="RedContent" Focusable="False"/>
 
-        <Grid Grid.Column="1">
+        <!--<Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.7*"/>
                 <RowDefinition Height="0.3*"/>
@@ -26,6 +31,9 @@
                             prism:RegionManager.RegionName="BlueContent" Focusable="False"/>
             <ContentControl Grid.Row="1"
                             prism:RegionManager.RegionName="GreenContent" Focusable="False"/>
+        </Grid>-->
+        <Grid Grid.Column="1">
+            <ContentControl prism:RegionManager.RegionName="BlueContent" Focusable="False"/>
         </Grid>
     </Grid>
 </metro:MetroWindow>
